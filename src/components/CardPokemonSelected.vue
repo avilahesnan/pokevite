@@ -52,12 +52,6 @@ const pokemon = defineProps(['name', 'id', 'type', 'img', 'loading'])
     margin-top: 100px;
     margin-bottom: 50px;
 }
-@media screen and (max-width: 1400px) {
-    .card-pokemon-selected img {
-        margin-top: 250px;
-        margin-bottom: 150px;
-    }
-}
 @media screen and (max-width: 767px) {
     .card-pokemon-selected {
         height: 30vh;
