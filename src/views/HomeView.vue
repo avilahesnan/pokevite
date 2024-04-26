@@ -5,8 +5,8 @@
                 <div class="col-sm-12 col-md-6">
                     <CardPokemonSelected 
                         :name="pokemonSelected?.name"
-                        :xp="pokemonSelected?.base_experience"
-                        :height="pokemonSelected?.height"
+                        :id="pokemonSelected?.id"
+                        :type="pokemonSelected?.types[0].type.name"
                         :img="pokemonSelected?.sprites.other.dream_world.front_default"
                         :loading="loading" />
                 </div>
@@ -55,10 +55,10 @@ let searchPokemonField = ref('')
 let pokemonSelected = reactive(ref())
 let loading = ref(false)
 
-onMounted(() => {
-    fetch('https://pokeapi.co/api/v2/pokemon?limit=494&offset=0')
-        .then(res => res.json())
-        .then(res => pokemons.value = res.results)
+onMounted(async () => {
+    await fetch('https://pokeapi.co/api/v2/pokemon?limit=494&offset=0')
+            .then(res => res.json())
+            .then(res => pokemons.value = res.results)
 })
 const pokemonsFiltered = computed(() => {
     if(pokemons.value && searchPokemonField.value) {
@@ -69,10 +69,10 @@ const pokemonsFiltered = computed(() => {
 const selectPokemon = async pokemon => {
     loading.value = true
     await fetch(pokemon.url)
-        .then(res => res.json())
-        .then(res => pokemonSelected.value = res)
-        .catch(err => alert(err))
-        .finally(() => loading.value = false)
+            .then(res => res.json())
+            .then(res => pokemonSelected.value = res)
+            .catch(err => alert(err))
+            .finally(() => loading.value = false)
 }
 
 </script>
@@ -83,6 +83,11 @@ const selectPokemon = async pokemon => {
     max-height: 75vh;
     overflow-y: scroll;
     overflow-x: hidden;
+}
+@media screen and (max-width: 767px) {
+    .card-list {
+        max-height: 50vh;
+    }
 }
 
 </style>

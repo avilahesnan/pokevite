@@ -1,11 +1,10 @@
 <template>
-    <div class="col-4">
+    <div class="col-4 col-md-6 col-xl-3">
         <div class="card p-2 mb-3 card-list-pokemon">
             <p class="text-center">{{ pokemon.name }}</p>
             <img
                 class="card-img-top"
-                height="80px"
-                alt="pokemon_image"
+                :alt="pokemon.name"
                 :src="urlBaseSvg">
         </div>
     </div>
@@ -27,9 +26,11 @@ const pokemon = defineProps(['name', 'urlBaseSvg'])
 .card-list-pokemon:hover {
     background: radial-gradient(circle, rgba(240,251,251,1) 0%, rgba(106,213,206,1) 50%, rgba(10,10,10,1) 100%);   
 }
-
+.card-list-pokemon img {
+    height: 80px;
+}
 .card-list-pokemon img:hover {
-    padding: .2rem;
+    padding: .1rem;
 }
 
 </style>

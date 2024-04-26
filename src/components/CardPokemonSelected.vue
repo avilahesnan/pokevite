@@ -7,13 +7,11 @@
         <img
             v-if="pokemon.name"
             class="card-img-top pt-2"
-            height="350px"
             :src="pokemon.img"
             :alt="pokemon.name">
         <img
             v-else
             class="card-img-top pt-2"
-            height="350px"
             src="../assets/egg.svg"
             alt="???">
         <div class="card-body">
@@ -21,12 +19,12 @@
             <hr>
             <div class="row">
                 <section class="col">
-                    <strong>XP:</strong>
-                    <span>{{ pokemon.xp || '???' }}</span>
+                    <strong>ID: </strong>
+                    <span>{{ pokemon.id || '???' }}</span>
                 </section>
                 <section class="col">
-                    <strong>Altura:</strong>
-                    <span>{{ pokemon.height || '???' }}</span>
+                    <strong>Type: </strong>
+                    <span>{{ pokemon.type || '???' }}</span>
                 </section>
             </div>
         </div>
@@ -37,7 +35,7 @@
 
 import 'animate.css';
 
-const pokemon = defineProps(['name', 'xp', 'height', 'img', 'loading'])
+const pokemon = defineProps(['name', 'id', 'type', 'img', 'loading'])
 
 </script>
 
@@ -47,6 +45,29 @@ const pokemon = defineProps(['name', 'xp', 'height', 'img', 'loading'])
     height: 75vh;
     background: rgb(240,251,251);
     background: radial-gradient(circle, rgba(240,251,251,1) 0%, rgba(145,216,238,1) 50%, rgba(10,10,10,1) 100%);
+    text-align: center;
 }
-
+.card-pokemon-selected img {
+    height: 250px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+@media screen and (max-width: 1400px) {
+    .card-pokemon-selected img {
+        margin-top: 250px;
+        margin-bottom: 150px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .card-pokemon-selected {
+        height: 30vh;
+        width: 40%;
+        margin: 0 auto 10px auto;
+    }
+    .card-pokemon-selected img {
+        height: 100px;
+        margin-top: 50px;
+        margin-bottom: 10px;
+    }
+}
 </style>

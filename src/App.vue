@@ -2,7 +2,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <router-link class="navbar-brand" to="/">
-                <img src="https://cdn-icons-png.flaticon.com/128/1408/1408927.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                <img src="./assets/ball.png" alt="Logo" width="24" height="24" class="d-inline-block align-text-top">
                 PokeVite
             </router-link>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,6 +31,7 @@
 <style>
 
 body {
+    overflow: hidden;
     height: 100vh;
     background: rgb(240,251,251);
     background: linear-gradient(360deg, rgba(240,251,251,1) 0%, rgba(125,224,255,1) 50%, rgba(10,10,10,1) 100%);
