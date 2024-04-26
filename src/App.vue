@@ -30,6 +30,11 @@
 
 <style>
 
+body {
+    height: 100vh;
+    background: rgb(240,251,251);
+    background: linear-gradient(360deg, rgba(240,251,251,1) 0%, rgba(125,224,255,1) 50%, rgba(10,10,10,1) 100%);
+}
 footer {
     position: fixed;
     bottom: 0;

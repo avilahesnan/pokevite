@@ -1,10 +1,16 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+    <div class="container mt-4 text-body-secondary">
+        <div class="card">
+            <h1 class="text-center">This is an about page</h1>
+            <div class="card-body">
+
+            </div>
+        </div>
+    </div>
 </template>
 
-<style>
+<style scoped>
+
 @media (min-width: 1024px) {
   .about {
     min-height: 100vh;
@@ -12,4 +18,5 @@
     align-items: center;
   }
 }
+
 </style>
