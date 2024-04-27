@@ -62,5 +62,8 @@ const pokemon = defineProps(['name', 'id', 'type', 'img', 'loading'])
         margin-top: 45px;
         margin-bottom: 15px;
     }
+    .card-body {
+        display: none;
+    }
 }
 </style>
