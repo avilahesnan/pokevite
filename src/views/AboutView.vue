@@ -4,13 +4,11 @@
             <div class="card-body">
                 <h1 class="card-title text-center">A little about this project.</h1>
                 <p class="card-text">
-                    I recently developed an exciting project using several modern technologies. I used Vite, Vue, Vite PWA, Netlify, and Bootstrap to create an amazing Pokedex, a web application that displays information about Pokémon, using data provided by the Pokeapi.
+                    I created an exciting Pokedex project using Vite, Vue, Vite PWA, Netlify, and Bootstrap. It's a web app showcasing Pokémon details sourced from Pokeapi.
 
-                    With Vite and Vue, I was able to create a fast and efficient application, making the most of the capabilities of the Vue.js framework to create a dynamic and responsive user interface. Additionally, Vite PWA made it possible to turn my application into a Progressive Web App, providing a smoother and offline experience for users.
+                    With Vite and Vue, I built a fast and efficient interface. Vite PWA provided an offline experience, and Netlify ensured seamless deployment. Bootstrap simplified styling.
 
-                    By hosting the project on Netlify, I got a continuous development environment and automated deployment, ensuring quick and reliable delivery of the application. And, of course, Bootstrap made it easy to style and create a visually appealing and consistent interface.
-
-                    With this Pokedex, users can explore and discover detailed information about Pokémon, such as statistics, types, and abilities. It was an incredible experience working on this project and exploring the potential of these modern technologies to create a high-quality web application.
+                    The Pokedex allows users to explore Pokémon info. It was an amazing experience utilizing these technologies to create a high-quality web app.
                 </p>
                 <h3 class="card-subtitle text-center">
                     <a href="https://github.com/avilahesnan" target="_blank">

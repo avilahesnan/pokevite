@@ -13,7 +13,7 @@
                 <div class="col-sm-12 col-md-6">
                     <div class="card card-list">
                         <div class="card-body row">
-                            <div class="mb-3">
+                            <div class="mb-3 sticky-top pt-2">
                                 <label
                                     hidden
                                     for="searchPokemonField"
